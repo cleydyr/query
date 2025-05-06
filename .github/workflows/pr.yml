@@ -63,7 +63,7 @@ jobs:
         run: |
           echo "COMMIT_SHA=${{ github.event.pull_request.head.sha || github.sha }}" >> $GITHUB_ENV
       - name: Preview Bundle Size
-        uses: marocchino/sticky-pull-request-comment@52423e01640425a022ef5fd42c6fb5f633a02728
+        uses: marocchino/sticky-pull-request-comment@885e744192a1bfe09c90f7e251053c2640f440c9
         with:
           message: |
             Sizes for commit ${{ env.COMMIT_SHA }}:
